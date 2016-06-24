@@ -20,12 +20,6 @@ function add2(fn1, fn2) {
 
 console.log('add2()', add2(foo, bar) );
 
-function curry(x) {
-    return function() {
-        return x;
-    }
-}
-
 function addn(...args) {
     return args.slice(1).reduce(function(prev, current) {
         return function() {
