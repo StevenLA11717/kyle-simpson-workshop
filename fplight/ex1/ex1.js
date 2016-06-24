@@ -2,7 +2,6 @@ function bar(x, y) {
 	var z;
 
     foo(x);
-
     return z;
 
 	function foo(x) {
