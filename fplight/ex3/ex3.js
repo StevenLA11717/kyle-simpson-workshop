@@ -1,7 +1,8 @@
-function mult(x,y,z) {
-	return x * y * z;
+function mult(product, ...nums) {
+	if (nums.length === 0) return product;
+	return product * mult( ...nums);
 }
 
-mult(3,4,5);	// 60
+console.log(mult(3,4,5));	// 60
 
-mult(3,4,5,6);	// Oops!
+console.log(mult(3,4,5,6));	// Oops!
